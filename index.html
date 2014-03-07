@@ -19,28 +19,37 @@
 <body>
 	<div class="container">
 		<h1>RPi Console Intro</h1>
-		<p>Most used Linux console commands for operating on the Raspperry Pi.</p>
-
-		<p>This is a list of frequently used console commands while using Raspberry Pi with Raspbian. This document is a combination of knowledge gathered from online materials and experience. Feel free to contribute via <a href="https://github.com/kr15h/rpi-console-intro">GitHub</a>.</p>
-
-		<p>This is important once you start to dig deeper in programming. It does not matter what kind of programming as the console is used a lot as in web, app and other kind of development today. This was made to support a couple of Raspberry Pi workshops.</p>
+		<p class="lead">Most used Linux console commands for operating on the Raspperry Pi. This is a list of frequently used console commands while using Raspberry Pi with Raspbian. This document is a combination of knowledge gathered from online materials and experience. Feel free to contribute via <a href="https://github.com/kr15h/rpi-console-intro">GitHub</a>.</p>
 
 		<h2>The commands</h2>
 		<div class="list-group">
-            <a href="#" class="list-group-item">
-              <h4>ls</h4>
-              <p>Lists curent directory contents. By issuing this command you can see what files and folders there are in the current directory you are.</p>
-            </a>
-            <a href="#" class="list-group-item">
-              <h4>pwd</h4>
-              <p>Tells the current directory you are in starting from the root level. For example:</p>
-              <pre>/home/pi/user</pre>
-            </a>
-            <a href="#" class="list-group-item">
-              <h4>cd</h4>
-              <p>Change directory. This is the main navigation command</p>
-            </a>
-          </div>
+      <div class="list-group-item">
+        <h4><code>ls</code></h4>
+        <p>Lists curent directory contents. By issuing this command you can see what files and folders there are in the current directory you are.</p>
+        <pre>ls /home/pi
+Desktop  Downloads  ocr_pi.png  openFrameworks  python_games  startup.sh  wayland</pre>
+      </div>
+      <div class="list-group-item">
+        <h4><code>pwd</code></h4>
+        <p>Tells the current directory you are in starting from the root level. For example:</p>
+        <pre>pwd
+/home/pi/user</pre>
+      </div>
+      <div class="list-group-item">
+        <h4><code>cd</code></h4>
+        <p>Change directory. This is the main navigation command within the Raspberry Pi terminal environment. <code>cd /home/pi</code> takes you to the home directory. When you execute <code>ls</code> again, you should see an output similar to the following:</p>
+        <pre>cd /home/pi
+ls
+Desktop  Downloads  ocr_pi.png  openFrameworks  python_games  startup.sh  wayland</pre>
+    </div>
+    <div class="list-group-item">
+      <h4><code>mkdir</code></h4>
+      <p>Create (make) directory. <code>mkdir test</code> creates a directory with the name <code>test</code>.</p>
+    </div>
+    <div class="list-group-item">
+      <h4><code>touch</code></h4>
+      <p>Creates a blank file. <code>touch test.txt</code> creates a blank <code>.txt</code> file.</p>
+    </div>
 	</div>
 
 	<script src="js/jquery-1.11.0.min.js"></script>
